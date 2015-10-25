@@ -1,4 +1,4 @@
-def action(command)
+def print_action(command)
   puts "Hit '+' to add"
   puts "Hit '-' to subtract"
   puts "Hit '*' to multiply"
@@ -7,7 +7,7 @@ def action(command)
   puts "Type STOP to exit the program"
 end
 
-def second_number(string)
+def print_second_number(string)
   puts "Enter the second number:"
 end
 
@@ -17,22 +17,22 @@ puts "Enter the first number:"
 num1 = gets.chomp
 
 loop do
-  action('command')
+  print_action('command')
   function = gets.chomp
   if function == '+'
-    second_number('string')
+    print_second_number('string')
     num2 = gets.chomp
     result = num1.to_i + num2.to_i
   elsif function == '-'
-    second_number('string')
+    print_second_number('string')
     num2 = gets.chomp
     result = num1.to_i - num2.to_i
   elsif function == '*'
-    second_number('string')
+    print_second_number('string')
     num2 = gets.chomp
     result = num1.to_i * num2.to_i
   elsif function == '/'
-    second_number('string')
+    print_second_number('string')
     num2 = gets.chomp
     result = num1.to_f / num2.to_f
   elsif function == '2'
