@@ -41,6 +41,7 @@ loop do
     break
   else
     puts "Sorry I didn't understand that."
+    result = num1
   end
   puts "====> " + result.to_s
   num1 = result
